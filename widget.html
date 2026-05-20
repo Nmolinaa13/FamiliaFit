@@ -8,36 +8,6 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0a0a0f">
 <title>FamiliaFit · Racha</title>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="FamiliaFit">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#0a0a0f">
-<link rel="apple-touch-icon" id="appIconLink" href="">
-<script>
-(function() {
-  const c = document.createElement("canvas");
-  c.width = 512; c.height = 512;
-  const ctx = c.getContext("2d");
-  const grad = ctx.createLinearGradient(0, 0, 512, 512);
-  grad.addColorStop(0, "#1c0f07");
-  grad.addColorStop(1, "#0a0a0f");
-  ctx.fillStyle = grad;
-  const r = 100;
-  ctx.beginPath();
-  ctx.moveTo(r,0); ctx.lineTo(512-r,0); ctx.quadraticCurveTo(512,0,512,r);
-  ctx.lineTo(512,512-r); ctx.quadraticCurveTo(512,512,512-r,512);
-  ctx.lineTo(r,512); ctx.quadraticCurveTo(0,512,0,512-r);
-  ctx.lineTo(0,r); ctx.quadraticCurveTo(0,0,r,0);
-  ctx.closePath(); ctx.fill();
-  ctx.strokeStyle = "rgba(255,87,34,0.4)";
-  ctx.lineWidth = 14;
-  ctx.beginPath(); ctx.arc(256,256,195,0,Math.PI*2); ctx.stroke();
-  ctx.font = "290px serif";
-  ctx.textAlign = "center"; ctx.textBaseline = "middle";
-  ctx.fillText("🔥", 256, 268);
-  document.getElementById("appIconLink").href = c.toDataURL("image/png");
-})();
 <script>
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
 
